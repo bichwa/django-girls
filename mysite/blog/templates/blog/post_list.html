@@ -10,19 +10,17 @@
 
 	</div>
 
+	{% for post in posts %}
 	<div>
-		<p>published: 14.06.2015, 12.30</p>
-		<h2><a href="">My first blog post</a></h2>
-		<p>dumy text dsdjskdnskdnskdnsdkxnsz</p>
-	</div>
-
-	<div>
-		<p>published: 14.06.2015, 12.30</p>
-		<h2><a href="">My first blog post</a></h2>
-		<p>dumy text dsdjskdnskdnskdnsdkxnsz</p>
+		<p>published:{{post.published_date}}</p>
+		<h1><a href="">{{post.title}}</a></h1>
+		<p>{{post.text}}</p> 
 
 
 	</div>
+	{% endfor %}
+
+
 
 
 </body>
